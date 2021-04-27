@@ -9,7 +9,7 @@ body {
 	margin: 0;
 	background: #fcfcfc;
 	color: #3d3d3d;
-	font-size: 1.2rem;
+	font-size: 1.1rem;
 }
 
 img {
@@ -57,20 +57,13 @@ a {
 	padding: 0.2em 1em;
 	color: #00bfa6;
 	font-weight: 600;
-}
-
-.btn-more {
-	text-align: center;
-	text-decoration: underline;
-	text-transform: uppercase;
-	font-weight: 600;
-	letter-spacing: 1px;
-	margin-top: 2em;
+	font-size: 1rem;
 }
 
 .btn-live {
-	border: 2px solid #00bfa6;
+	border: 1px solid #00bfa6;
 }
+
 .btn-live:hover,
 .btn-live:focus {
 	background: #00bfa6;
@@ -85,6 +78,12 @@ a {
 	gap: 20px;
 	justify-content: space-between;
 	padding: 1em 0;
+}
+
+.btn-socials:hover,
+.btn-socials:focus {
+	text-decoration: underline;
+	opacity: 0.7;
 }
 
 /* layout */

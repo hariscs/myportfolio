@@ -59,6 +59,15 @@ a {
 	font-weight: 600;
 }
 
+.btn-more {
+	text-align: center;
+	text-decoration: underline;
+	text-transform: uppercase;
+	font-weight: 600;
+	letter-spacing: 1px;
+	margin-top: 2em;
+}
+
 .btn-live {
 	border: 2px solid #00bfa6;
 }
@@ -86,7 +95,7 @@ a {
 .intro-section {
 	display: grid;
 	justify-content: start;
-	padding: 4em 1em;
+	padding: 6em 1em 10em;
 }
 
 .intro {

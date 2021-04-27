@@ -57,7 +57,6 @@ a {
 	padding: 0.2em 1em;
 	color: #00bfa6;
 	font-weight: 600;
-	font-size: 1rem;
 }
 
 .btn-live {
@@ -76,7 +75,6 @@ a {
 .btn-group {
 	display: flex;
 	gap: 20px;
-	justify-content: space-between;
 	padding: 1em 0;
 }
 

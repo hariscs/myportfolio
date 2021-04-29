@@ -114,6 +114,10 @@ a {
 	flex-direction: column;
 }
 
+.about-img {
+	border-radius: 10px;
+}
+
 .about-me {
 	text-align: center;
 	font-size: 3rem;
@@ -162,15 +166,31 @@ a {
 	color: #00bfa6;
 }
 
+.connect-form {
+}
+
 form {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 }
 
+form * + * {
+	margin-top: 0.8em;
+}
+
 form label,
 form input {
 	display: block;
+}
+
+form input {
+	padding: 1em;
+}
+
+form input,
+textarea {
+	font-family: inherit;
 }
 
 footer .container {
@@ -181,4 +201,25 @@ footer .container {
 .footer-socials {
 	display: flex;
 	align-items: center;
+}
+
+.btn-submit {
+	background: none;
+	border: 2px solid #00bfa6;
+	padding: 0.8em 1.8em;
+	text-transform: uppercase;
+	font-weight: 600;
+	font-size: 1rem;
+	align-self: flex-end;
+	background: #00bfa6;
+	color: #fff;
+}
+
+.btn-submit:hover,
+.btn-submit:focus {
+	background: 0;
+	color: #00bfa6;
+}
+
+@media screen {
 }

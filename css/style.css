@@ -98,7 +98,7 @@ a {
 .intro {
 	font-size: 1.5rem;
 	font-size: clamp(1.5rem, calc(2.9vw + 1rem), 4rem);
-	padding: 2.5em 0 3em;
+	padding: 2.5em 0 4em;
 }
 
 .intro span {
@@ -167,9 +167,6 @@ a {
 	color: #00bfa6;
 }
 
-.connect-form {
-}
-
 form {
 	display: flex;
 	flex-direction: column;
@@ -195,6 +192,7 @@ form input {
 form input,
 textarea {
 	font-family: inherit;
+	color: inherit;
 }
 
 footer .container {
@@ -210,7 +208,8 @@ footer .container {
 .btn-submit {
 	background: none;
 	border: 2px solid #00bfa6;
-	padding: 0.8em 1.8em;
+	border-radius: 5px;
+	padding: 0.6em 1.6em;
 	text-transform: uppercase;
 	font-weight: 600;
 	font-size: 1rem;

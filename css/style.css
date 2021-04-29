@@ -98,7 +98,7 @@ a {
 .intro {
 	font-size: 1.5rem;
 	font-size: clamp(1.5rem, calc(2.9vw + 1rem), 4rem);
-	padding: 2.5em 0;
+	padding: 2.5em 0 3em;
 }
 
 .intro span {
@@ -176,6 +176,7 @@ form {
 	justify-content: center;
 	background: #fff;
 	padding: 1em;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.13), 0 3px 6px rgba(0, 0, 0, 0.2);
 }
 
 form * + * {

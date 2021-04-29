@@ -216,13 +216,11 @@ footer .container {
 	align-self: flex-end;
 	background: #00bfa6;
 	color: #fff;
+	cursor: pointer;
 }
 
 .btn-submit:hover,
 .btn-submit:focus {
 	background: 0;
 	color: #00bfa6;
-}
-
-@media screen {
 }

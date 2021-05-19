@@ -1,6 +1,6 @@
 # Haris Shah Portfolio Site
 
-This is my personal portfolio site. I will uplaod all my personal projects to this website.
+This is my personal portfolio site. I will upload all my personal projects to this website.
 
 ## Table of contents
 
@@ -30,17 +30,16 @@ This Website should :
 
 ## My process
 
-- Take the mobile first approch, used a media query for larger screens.
+- Take the mobile first approach, used a media query for larger screens.
 
 ### Built with
 
 - Semantic HTML5 markup
-- Flexbox
+- FlexBox
 - CSS Grid
 - Mobile-first workflow
 
 ## Author
 
-- Website - [Haris Shah](https://hariss.netlify.app/)
 - GitHub - [@hariscs](https://github.com/hariscs)
 - Twitter - [@\_haris_shah](https://www.twitter.com/_haris_shah)

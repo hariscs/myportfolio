@@ -8,7 +8,7 @@ body {
 	font-family: 'Roboto Mono', monospace;
 	margin: 0;
 	background: #fcfcfc;
-	color: #3d3d3d;
+	color: #232323;
 	font-size: 1.1rem;
 }
 
@@ -170,7 +170,17 @@ a {
 }
 
 .project-img img {
-	border-radius: 5px;
+	border-radius: 0.2rem;
+}
+
+.attribution {
+	font-weight: 700;
+	color: #00b0ff;
+	text-decoration: underline;
+}
+
+.attribution:hover {
+	color: #ed2c49;
 }
 
 .skills {
@@ -223,7 +233,8 @@ form input {
 	display: block;
 }
 
-form input {
+form input,
+textarea {
 	padding: 1em;
 }
 
@@ -246,6 +257,23 @@ footer .container {
 .footer-socials {
 	display: flex;
 	align-items: center;
+}
+
+.project {
+	padding: 1em;
+	background: #fff;
+	border-radius: 5px;
+	display: grid;
+	text-align: center;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.project-img {
+	order: -1;
+}
+
+.grid {
+	gap: 1em;
 }
 
 /* media query */
@@ -281,7 +309,6 @@ footer .container {
 
 	.grid {
 		grid-template-columns: 1fr 1fr/1fr 1fr 1fr;
-		gap: 1em;
 	}
 
 	.project-1 {
@@ -303,18 +330,13 @@ footer .container {
 
 	/* each card in the projects section */
 	.project {
-		display: grid;
-		padding: 1em;
 		box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.2);
 		transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-		background: #fff;
-		border-radius: 5px;
 	}
 	.project:hover {
 		box-shadow: 0 14px 28px rgba(0, 0, 0, 0.23), 0 10px 10px rgba(0, 0, 0, 0.2);
 	}
 	.project-img {
-		order: -1;
 		transition: all 0.3s ease-in-out;
 	}
 
@@ -377,5 +399,13 @@ footer .container {
 
 	.btn-socials {
 		margin-left: 2em;
+	}
+}
+
+/* media query for smaller screens */
+@media (max-width: 444px) {
+	.intro {
+		font-size: 1.2rem;
+		padding: 1.5em 0;
 	}
 }

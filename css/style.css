@@ -121,6 +121,7 @@ a {
 	font-size: 1.5rem;
 	font-size: clamp(1.5rem, calc(2.9vw + 1rem), 4rem);
 	padding: 2.5em 0 4em;
+	max-width: 25ch;
 }
 
 .intro span {
@@ -173,13 +174,31 @@ a {
 	border-radius: 0.2rem;
 }
 
+.project {
+	padding: 1em;
+	background: #fff;
+	border-radius: 5px;
+	display: grid;
+	text-align: center;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.project-img {
+	order: -1;
+}
+
+.grid {
+	gap: 1em;
+}
+
 .attribution {
 	font-weight: 700;
 	color: #00b0ff;
 	text-decoration: underline;
 }
 
-.attribution:hover {
+.attribution:hover,
+.attribution:focus {
 	color: #ed2c49;
 }
 
@@ -233,13 +252,8 @@ form input {
 	display: block;
 }
 
-form input,
-textarea {
+form input {
 	padding: 1em;
-}
-
-form input,
-textarea {
 	font-family: inherit;
 	color: inherit;
 }
@@ -257,23 +271,6 @@ footer .container {
 .footer-socials {
 	display: flex;
 	align-items: center;
-}
-
-.project {
-	padding: 1em;
-	background: #fff;
-	border-radius: 5px;
-	display: grid;
-	text-align: center;
-	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.2);
-}
-
-.project-img {
-	order: -1;
-}
-
-.grid {
-	gap: 1em;
 }
 
 /* media query */
@@ -405,7 +402,6 @@ footer .container {
 /* media query for smaller screens */
 @media (max-width: 444px) {
 	.intro {
-		font-size: 1.2rem;
-		padding: 1.5em 0;
+		padding: 1.5em 0 2em;
 	}
 }

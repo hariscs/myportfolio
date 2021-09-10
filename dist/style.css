@@ -218,6 +218,7 @@ section {
 
 .projects .card__info {
   padding: 2em 1em;
+  width: 100%;
 }
 
 .projects .card__title {
@@ -231,6 +232,7 @@ section {
 .projects .card__img {
   order: -1;
   border-radius: 4px;
+  width: 100%;
 }
 
 @media (min-width: 769px) {
@@ -342,5 +344,25 @@ section {
   font-weight: 700;
   margin-top: 1em;
   display: block;
+}
+
+.footer {
+  padding: 2em 0;
+}
+
+.footer .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer .links {
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+}
+
+.footer .links .fab {
+  margin-left: 0.5em;
 }
 /*# sourceMappingURL=style.css.map */

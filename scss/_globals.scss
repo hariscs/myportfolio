@@ -1,0 +1,49 @@
+html {
+	font-size: 100%;
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	margin: 0;
+	font-family: 'Raleway', sans-serif;
+	line-height: 1.5;
+}
+
+img {
+	max-width: 100%;
+	display: block;
+}
+
+a {
+	text-decoration: none;
+}
+
+p {
+	color: $pale-grey;
+}
+
+section {
+	padding: 2em 0;
+}
+
+.container {
+	max-width: 375px;
+	width: 90%;
+	margin: 0 auto;
+
+	@include desktop {
+		max-width: 1440px;
+		font-size: 1.5rem;
+	}
+}

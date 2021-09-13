@@ -1,6 +1,7 @@
 html {
   font-size: 100%;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -46,7 +47,7 @@ section {
 @media (min-width: 769px) {
   .container {
     max-width: 1440px;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 }
 
@@ -202,23 +203,15 @@ section {
 }
 
 .projects .card {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   align-items: center;
-  justify-content: space-between;
   padding: 2em 0;
   margin: 2em 0;
 }
 
-@media (min-width: 769px) {
-  .projects .card {
-    flex-direction: row;
-  }
-}
-
 .projects .card__info {
   padding: 2em 1em;
-  width: 100%;
 }
 
 .projects .card__title {
@@ -232,17 +225,12 @@ section {
 .projects .card__img {
   order: -1;
   border-radius: 4px;
-  width: 100%;
 }
 
 @media (min-width: 769px) {
   .projects .card__img {
     order: 0;
   }
-}
-
-.projects .card > * {
-  width: 100%;
 }
 
 .btn-group {

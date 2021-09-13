@@ -214,11 +214,13 @@ section {
   border: 1px solid #6e00ff;
   border-radius: 4px;
   transition: all 0.3s ease-in-out;
+  background: #6e00ff;
+  color: #fff;
 }
 
 .btn-group .btn-primary:hover, .btn-group .btn-primary:focus {
-  background: #6e00ff;
-  color: #fff;
+  background: transparent;
+  color: #6e00ff;
 }
 
 .btn-group .btn-secondary:focus,

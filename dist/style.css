@@ -31,5 +31,177 @@ a {
 
 section {
   padding: 4em 2em;
+  text-align: center;
+}
+
+.nav-container {
+  background: #6700ee;
+}
+
+.nav-container a {
+  color: #fff;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5em;
+}
+
+.header .logo {
+  color: #00f7ff;
+  font-weight: 700;
+}
+
+.header .intro {
+  font-weight: 700;
+}
+
+.social-header {
+  display: none;
+}
+
+.social-header ul {
+  display: flex;
+}
+
+.social-header li + li {
+  margin-left: 2em;
+}
+
+.hero {
+  background: #6e00ff;
+  color: #fff;
+  display: grid;
+  text-align: center;
+  padding: 4em;
+}
+
+.hero-design {
+  display: none;
+}
+
+.know-more {
+  display: flex;
+  gap: 0.5em;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  color: #ff64cb;
+}
+
+.scroll {
+  width: 30px;
+  margin-top: 2em;
+}
+
+.about {
+  position: relative;
+}
+
+.about::before {
+  content: '';
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: #e5d5fa;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.about__title {
+  text-transform: uppercase;
+  color: #6e00ff;
+  letter-spacing: 0.2em;
+}
+
+.about__subtitle {
+  color: #252525;
+  line-height: 1.5;
+  max-width: 50ch;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.skills {
+  background: #ff64cb;
+  color: #fff;
+}
+
+.skills__title {
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  margin-bottom: 2.5em;
+}
+
+.skills__card {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  gap: 1em;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.skills__card .fab {
+  font-size: 3em;
+}
+
+.projects {
+  background: #f7f7f7;
+}
+
+.projects__container {
+  display: grid;
+  margin-bottom: 3em;
+}
+
+.projects__container a {
+  order: -1;
+}
+
+.projects__container a img {
+  border-radius: 1em;
+}
+
+.project__subtitle {
+  max-width: 50ch;
+  margin-left: auto;
+  margin-right: auto;
+  color: #252525;
+}
+
+.btn-group {
+  display: flex;
+  gap: 1em;
+  justify-content: center;
+  margin: 1em 0;
+}
+
+.btn-group .btn {
+  display: inline-block;
+  padding: 0.6em 1.5em;
+  color: #6e00ff;
+  font-weight: 700;
+}
+
+.btn-group .btn-primary {
+  border: 1px solid #6e00ff;
+  border-radius: 4px;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-group .btn-primary:hover, .btn-group .btn-primary:focus {
+  background: #6e00ff;
+  color: #fff;
+}
+
+.btn-group .btn-secondary:focus,
+.btn-group .btn-secondary:hover {
+  text-decoration: underline;
 }
 /*# sourceMappingURL=style.css.map */

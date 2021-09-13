@@ -1,0 +1,23 @@
+.skills {
+	background: $pink;
+	color: $white;
+
+	&__title {
+		text-transform: uppercase;
+		letter-spacing: 0.2em;
+		margin-bottom: 2.5em;
+	}
+	&__card {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		justify-content: center;
+		gap: 1em;
+		max-width: 700px;
+		margin-left: auto;
+		margin-right: auto;
+
+		.fab {
+			font-size: 3em;
+		}
+	}
+}

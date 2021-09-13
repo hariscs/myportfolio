@@ -1,0 +1,61 @@
+.nav-container {
+	background: $purple;
+
+	a {
+		color: $white;
+	}
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1.5em;
+
+	.logo {
+		color: $cyan;
+		font-weight: 700;
+	}
+
+	.intro {
+		font-weight: 700;
+	}
+}
+
+.social-header {
+	display: none;
+
+	ul {
+		display: flex;
+	}
+	li + li {
+		margin-left: 2em;
+	}
+}
+
+// hero section
+.hero {
+	background: $blue;
+	color: $white;
+	display: grid;
+	text-align: center;
+	padding: 4em;
+}
+
+.hero-design {
+	display: none;
+}
+
+.know-more {
+	display: flex;
+	gap: 0.5em;
+	justify-content: center;
+	align-items: center;
+	font-weight: 700;
+	color: $pink;
+}
+
+.scroll {
+	width: 30px;
+	margin-top: 2em;
+}

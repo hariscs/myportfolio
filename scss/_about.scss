@@ -1,0 +1,29 @@
+.about {
+	position: relative;
+
+	&::before {
+		content: '';
+		position: absolute;
+		width: 200px;
+		height: 200px;
+		border-radius: 50%;
+		background: #e5d5fa;
+		top: 0;
+		left: 0;
+		z-index: -1;
+	}
+
+	&__title {
+		text-transform: uppercase;
+		color: $blue;
+		letter-spacing: 0.2em;
+	}
+
+	&__subtitle {
+		color: #252525;
+		line-height: 1.5;
+		max-width: 50ch;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}

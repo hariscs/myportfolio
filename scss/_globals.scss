@@ -1,7 +1,6 @@
 html {
-	font-size: 100%;
 	box-sizing: border-box;
-	scroll-behavior: smooth;
+	font-size: 100%;
 }
 
 *,
@@ -10,15 +9,9 @@ html {
 	box-sizing: inherit;
 }
 
-* {
-	margin: 0;
-	padding: 0;
-}
-
 body {
 	margin: 0;
 	font-family: 'Raleway', sans-serif;
-	line-height: 1.5;
 }
 
 img {
@@ -26,25 +19,16 @@ img {
 	display: block;
 }
 
+ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
 a {
 	text-decoration: none;
 }
 
-p {
-	color: $pale-grey;
-}
-
 section {
-	padding: 2em 0;
-}
-
-.container {
-	max-width: 375px;
-	width: 90%;
-	margin: 0 auto;
-
-	@include desktop {
-		max-width: 1440px;
-		font-size: 1.2rem;
-	}
+	padding: 4em 2em;
 }

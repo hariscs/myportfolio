@@ -1,5 +1,5 @@
 // media query for larger screens
-@mixin desktop {
+@mixin Tablets {
 	@media (min-width: 769px) {
 		@content;
 	}

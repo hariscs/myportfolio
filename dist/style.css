@@ -12,6 +12,7 @@ html {
 body {
   margin: 0;
   font-family: 'Raleway', sans-serif;
+  max-width: 1440px;
 }
 
 img {
@@ -32,6 +33,12 @@ a {
 section {
   padding: 4em 2em;
   text-align: center;
+}
+
+@media (min-width: 1050px) {
+  section {
+    padding: 4em;
+  }
 }
 
 .nav-container {
@@ -58,12 +65,24 @@ section {
   font-weight: 700;
 }
 
+.header .intro:hover, .header .intro:focus {
+  color: #00f7ff;
+}
+
 .social-header {
   display: none;
 }
 
 .social-header ul {
   display: flex;
+}
+
+.social-header ul .fab {
+  font-size: 1.8em;
+}
+
+.social-header ul .fab:hover, .social-header ul .fab:focus {
+  color: #6700ee;
 }
 
 .social-header li + li {
@@ -117,6 +136,55 @@ section {
   }
 }
 
+@media (min-width: 1050px) {
+  .hero {
+    height: 90vh;
+    display: grid;
+    grid-template-columns: 66% auto;
+    background: unset;
+    padding: 0;
+  }
+  .hero__content {
+    background: #6e00ff;
+    padding: 6em 8em 6em 4em;
+    text-align: left;
+  }
+  .hero__content h1 {
+    font-size: 3em;
+    line-height: 1.2;
+  }
+  .hero__content .know-more {
+    justify-content: flex-start;
+  }
+  .hero-design {
+    display: unset;
+    width: 100%;
+    margin-left: -50%;
+    margin-top: 5%;
+  }
+  .nav-container {
+    display: grid;
+    grid-template-columns: 66% auto;
+    background: unset;
+  }
+  .header {
+    background: #6700ee;
+    padding: 2em 2em 2em 4em;
+  }
+  .social-header {
+    padding: 2em 4em 2em 0;
+    display: block;
+  }
+  .social-header ul {
+    justify-content: space-between;
+    float: right;
+  }
+  .social-header a {
+    color: #000;
+    margin-left: 1em;
+  }
+}
+
 .about {
   position: relative;
 }
@@ -147,6 +215,29 @@ section {
   margin-right: auto;
 }
 
+@media (min-width: 800px) {
+  .about,
+  .projects {
+    text-align: left;
+  }
+  .about,
+  .projects__container {
+    display: grid;
+    gap: 1em;
+    grid-template-columns: 40% auto;
+    align-items: center;
+  }
+}
+
+@media (min-width: 1050px) {
+  .about {
+    padding-top: 10em;
+  }
+  .about::before {
+    top: 150px;
+  }
+}
+
 .skills {
   background: #ff64cb;
   color: #fff;
@@ -170,6 +261,17 @@ section {
 
 .skills__card .fab {
   font-size: 3em;
+  cursor: pointer;
+}
+
+.skills__card .fab:hover, .skills__card .fab:focus {
+  color: #6e00ff;
+}
+
+@media (min-width: 800px) {
+  .skills .fab {
+    font-size: 5em;
+  }
 }
 
 .projects {
@@ -226,6 +328,28 @@ section {
 .btn-group .btn-secondary:focus,
 .btn-group .btn-secondary:hover {
   text-decoration: underline;
+}
+
+@media (min-width: 800px) {
+  .projects__container a {
+    order: 0;
+  }
+  .projects__container a img {
+    margin-left: 2em;
+  }
+  .projects__content {
+    display: grid;
+    place-content: center;
+  }
+  .btn-group {
+    justify-content: flex-start;
+  }
+}
+
+@media (min-width: 1050px) {
+  know-more .projects__container a img {
+    max-width: 500px;
+  }
 }
 
 .contact {
@@ -377,5 +501,19 @@ section {
 
 .footer__links .fab:hover {
   color: #00f7ff;
+}
+
+@media (min-width: 800px) {
+  .footer {
+    padding: 2em;
+  }
+  .footer__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .footer__links {
+    margin: 0;
+  }
 }
 /*# sourceMappingURL=style.css.map */

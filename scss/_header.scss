@@ -19,6 +19,11 @@
 
 	.intro {
 		font-weight: 700;
+
+		&:hover,
+		&:focus {
+			color: $cyan;
+		}
 	}
 }
 
@@ -27,6 +32,15 @@
 
 	ul {
 		display: flex;
+
+		.fab {
+			font-size: 1.8em;
+
+			&:hover,
+			&:focus {
+				color: $purple;
+			}
+		}
 	}
 	li + li {
 		margin-left: 2em;
@@ -79,5 +93,64 @@
 	}
 	to {
 		transform: translate(262px, 830px);
+	}
+}
+
+// media query for desktops
+@include desktop {
+	.hero {
+		height: 90vh;
+		display: grid;
+		grid-template-columns: 66% auto;
+		background: unset;
+		padding: 0;
+
+		&__content {
+			background: $blue;
+			padding: 6em 8em 6em 4em;
+			text-align: left;
+
+			h1 {
+				font-size: 3em;
+				line-height: 1.2;
+			}
+
+			.know-more {
+				justify-content: flex-start;
+			}
+		}
+	}
+
+	.hero-design {
+		display: unset;
+		width: 100%;
+		margin-left: -50%;
+		margin-top: 5%;
+	}
+
+	.nav-container {
+		display: grid;
+		grid-template-columns: 66% auto;
+		background: unset;
+	}
+
+	.header {
+		background: $purple;
+		padding: 2em 2em 2em 4em;
+	}
+
+	.social-header {
+		padding: 2em 4em 2em 0;
+		display: block;
+
+		ul {
+			justify-content: space-between;
+			float: right;
+		}
+
+		a {
+			color: $black;
+			margin-left: 1em;
+		}
 	}
 }

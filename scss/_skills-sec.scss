@@ -18,6 +18,18 @@
 
 		.fab {
 			font-size: 3em;
+			cursor: pointer;
+
+			&:hover,
+			&:focus {
+				color: $blue;
+			}
 		}
+	}
+}
+
+@include tablets {
+	.skills .fab {
+		font-size: 5em;
 	}
 }

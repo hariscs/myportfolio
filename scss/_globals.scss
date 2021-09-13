@@ -12,6 +12,7 @@ html {
 body {
 	margin: 0;
 	font-family: 'Raleway', sans-serif;
+	max-width: 1440px;
 }
 
 img {
@@ -32,4 +33,7 @@ a {
 section {
 	padding: 4em 2em;
 	text-align: center;
+	@include desktop {
+		padding: 4em;
+	}
 }

@@ -56,3 +56,29 @@
 		text-decoration: underline;
 	}
 }
+
+// media query for tablets
+@include tablets {
+	.projects__container a {
+		order: 0;
+
+		img {
+			margin-left: 2em;
+		}
+	}
+
+	.projects__content {
+		display: grid;
+		place-content: center;
+	}
+
+	.btn-group {
+		justify-content: flex-start;
+	}
+}
+
+@include desktop {
+	know-more .projects__container a img {
+		max-width: 500px;
+	}
+}

@@ -32,3 +32,18 @@
 		}
 	}
 }
+
+@include tablets {
+	.footer {
+		padding: 2em;
+	}
+	.footer__container {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	.footer__links {
+		margin: 0;
+	}
+}

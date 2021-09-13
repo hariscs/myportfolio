@@ -1,0 +1,56 @@
+.contact {
+	color: #252525;
+
+	&__title {
+		color: $blue;
+		letter-spacing: 0.2em;
+	}
+}
+
+.contact__form {
+	max-width: 700px;
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	flex-direction: column;
+	label,
+	input {
+		display: block;
+		text-align: left;
+	}
+	label {
+		font-weight: 700;
+	}
+
+	input {
+		margin-bottom: 2em;
+		padding: 0.8em;
+		font-family: inherit;
+		font-size: 1em;
+	}
+
+	textarea {
+		padding: 1em;
+		font-family: inherit;
+	}
+
+	button {
+		display: block;
+		border: 1px solid $blue;
+		background: $blue;
+		color: $white;
+		padding: 1em;
+		margin-top: 1em;
+		font-weight: 700;
+		font-family: inherit;
+		font-size: 1em;
+		cursor: pointer;
+		transition: all 0.3s ease-in-out;
+
+		&:hover,
+		&:focus {
+			background: transparent;
+			color: $blue;
+		}
+	}
+}

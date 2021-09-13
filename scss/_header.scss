@@ -40,6 +40,13 @@
 	display: grid;
 	text-align: center;
 	padding: 4em;
+	height: 70vh;
+
+	&__upper-text {
+		margin: 1em 0 -1em;
+		display: block;
+		font-weight: 500;
+	}
 }
 
 .hero-design {

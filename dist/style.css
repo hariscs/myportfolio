@@ -346,6 +346,9 @@ section {
     display: grid;
     place-content: center;
   }
+  .project__subtitle {
+    margin-left: unset;
+  }
   .btn-group {
     justify-content: flex-start;
   }
@@ -392,8 +395,9 @@ section {
 }
 
 .contact__form textarea {
-  padding: 1em;
+  padding: 1.5em;
   font-family: inherit;
+  font-size: 1em;
 }
 
 .contact__form button {
@@ -450,8 +454,9 @@ section {
 }
 
 .contact__form textarea {
-  padding: 1em;
+  padding: 1.5em;
   font-family: inherit;
+  font-size: 1em;
 }
 
 .contact__form button {

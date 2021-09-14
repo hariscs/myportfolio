@@ -1,6 +1,7 @@
 html {
   box-sizing: border-box;
   font-size: 100%;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -491,10 +492,12 @@ section {
 
 .footer .logo {
   margin: 0;
+  letter-spacing: 0.11em;
 }
 
 .footer .logo-intro {
   margin-top: 0;
+  margin-bottom: 0;
 }
 
 .footer__links {

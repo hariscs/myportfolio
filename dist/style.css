@@ -213,6 +213,11 @@ section {
   max-width: 50ch;
   margin-left: auto;
   margin-right: auto;
+  line-height: 1.6;
+}
+
+.about__subtitle span {
+  font-weight: 700;
 }
 
 @media (min-width: 800px) {

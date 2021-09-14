@@ -26,7 +26,7 @@ This Website should :
 ### Links
 
 - Source code URL: [GitHub](https://github.com/hariscs/myportfolio)
-- Live Site URL: [Netlify](https://hariss.netlify.app/)
+- Live Site URL: [Netlify](https://harisshah.codes/)
 
 ## My process
 
@@ -35,9 +35,11 @@ This Website should :
 ### Built with
 
 - Semantic HTML5 markup
+- SASS
 - FlexBox
 - CSS Grid
 - Mobile-first workflow
+- GSAP for animations
 
 ## Author
 

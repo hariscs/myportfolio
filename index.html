@@ -360,15 +360,32 @@
 				</p>
 				<p class="phone">Phone: +923129931087</p>
 				<p class="email">Email: harisshah385@gmail.com</p>
-				<form method="POST" data-netlify="true" class="contact__form">
+				<form
+					action="POST"
+					method="POST"
+					data-netlify="true"
+					class="contact__form"
+				>
 					<label for="name">Name</label>
-					<input type="text" id="name" name="name" />
+					<input type="text" id="name" name="name" placeholder="Your Name" />
 
 					<label for="email">Email</label>
-					<input type="text" id="email" name="email" required />
+					<input
+						type="text"
+						id="email"
+						name="email"
+						required
+						placeholder="name@example.com"
+					/>
 
 					<label for="message">Message</label>
-					<textarea name="message" id="message" required></textarea>
+					<textarea
+						name="message"
+						id="message"
+						required
+						placeholder="Your Message"
+						rows="6"
+					></textarea>
 
 					<button type="submit">Send</button>
 				</form>

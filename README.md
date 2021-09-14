@@ -20,13 +20,13 @@ This Website should :
 
 ### Screenshot
 
-![](./images/desktop.png)
-![](./images/mobile.png)
+![](./assets/portfolio-desktop.png)
+![](./assets/portfolio-mobile.png)
 
 ### Links
 
 - Source code URL: [GitHub](https://github.com/hariscs/myportfolio)
-- Live Site URL: [Netlify](https://harisshah.codes/)
+- Live Site URL: [Haris](https://harisshah.codes/)
 
 ## My process
 

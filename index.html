@@ -360,15 +360,15 @@
 				</p>
 				<p class="phone">Phone: +923129931087</p>
 				<p class="email">Email: harisshah385@gmail.com</p>
-				<form class="contact__form">
+				<form method="POST" data-netlify="true" class="contact__form">
 					<label for="name">Name</label>
-					<input type="text" id="name" />
+					<input type="text" id="name" name="name" />
 
 					<label for="email">Email</label>
-					<input type="text" id="email" />
+					<input type="text" id="email" name="email" required />
 
 					<label for="message">Message</label>
-					<textarea name="message" id="message"></textarea>
+					<textarea name="message" id="message" required></textarea>
 
 					<button type="submit">Send</button>
 				</form>

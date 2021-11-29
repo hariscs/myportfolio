@@ -70,24 +70,6 @@ section {
   color: #00f7ff;
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 0.5em;
-}
-
-.grid .logo {
-  padding: 0.5em;
-  display: grid;
-  place-items: center;
-  background: #fff;
-  border-radius: 10px;
-}
-
-.grid .logo img {
-  width: 60px;
-}
-
 .social-header {
   display: none;
 }
@@ -121,6 +103,25 @@ section {
   margin: 1em 0 -1em;
   display: block;
   font-weight: 500;
+}
+
+.hero .grid {
+  margin: 2em auto;
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  gap: 0.5em;
+}
+
+.hero .grid .logo {
+  padding: 0.2em;
+  display: grid;
+  place-items: center;
+  background: #fff;
+  border-radius: 10px;
+}
+
+.hero .grid .logo img {
+  width: 60px;
 }
 
 .hero-design {

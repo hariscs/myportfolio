@@ -27,23 +27,6 @@
 	}
 }
 
-.grid {
-	display: grid;
-	grid-template-columns: repeat(4, 1fr);
-	gap: 0.5em;
-
-	.logo {
-		img {
-			width: 60px;
-		}
-		padding: 0.5em;
-		display: grid;
-		place-items: center;
-		background: #fff;
-		border-radius: 10px;
-	}
-}
-
 .social-header {
 	display: none;
 
@@ -77,6 +60,24 @@
 		margin: 1em 0 -1em;
 		display: block;
 		font-weight: 500;
+	}
+
+	.grid {
+		margin: 2em auto;
+		display: grid;
+		grid-template-columns: repeat(3, 100px);
+		gap: 0.5em;
+
+		.logo {
+			img {
+				width: 60px;
+			}
+			padding: 0.2em;
+			display: grid;
+			place-items: center;
+			background: $white;
+			border-radius: 10px;
+		}
 	}
 }
 

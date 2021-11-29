@@ -70,6 +70,24 @@ section {
   color: #00f7ff;
 }
 
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.5em;
+}
+
+.grid .logo {
+  padding: 0.5em;
+  display: grid;
+  place-items: center;
+  background: #fff;
+  border-radius: 10px;
+}
+
+.grid .logo img {
+  width: 60px;
+}
+
 .social-header {
   display: none;
 }

@@ -106,9 +106,9 @@ section {
 }
 
 .hero .grid {
-  margin: 2em auto;
+  margin: 2em auto 1em;
   display: grid;
-  grid-template-columns: repeat(3, 100px);
+  grid-template-columns: repeat(3, minmax(80px, 100px));
   gap: 0.5em;
 }
 

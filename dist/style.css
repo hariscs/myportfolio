@@ -108,8 +108,9 @@ section {
 .hero .grid {
   margin: 2em auto 1em;
   display: grid;
-  grid-template-columns: repeat(3, minmax(80px, 100px));
+  grid-template-columns: repeat(3, minmax(50px, 100px));
   gap: 0.5em;
+  place-content: center;
 }
 
 .hero .grid .logo {
@@ -137,11 +138,6 @@ section {
   color: #ff64cb;
 }
 
-.scroll {
-  width: 30px;
-  margin-top: 2em;
-}
-
 .circle {
   animation: circleAnim 1s infinite alternate-reverse;
 }
@@ -163,6 +159,9 @@ section {
     grid-template-columns: 66% auto;
     background: unset;
     padding: 0;
+  }
+  .hero .grid {
+    place-content: unset;
   }
   .hero__content {
     background: #6e00ff;

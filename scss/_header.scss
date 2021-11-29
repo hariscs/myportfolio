@@ -65,8 +65,9 @@
 	.grid {
 		margin: 2em auto 1em;
 		display: grid;
-		grid-template-columns: repeat(3, minmax(80px, 100px));
+		grid-template-columns: repeat(3, minmax(50px, 100px));
 		gap: 0.5em;
+		place-content: center;
 
 		.logo {
 			img {
@@ -94,10 +95,10 @@
 	color: $pink;
 }
 
-.scroll {
-	width: 30px;
-	margin-top: 2em;
-}
+// .scroll {
+// 	width: 30px;
+// 	margin-top: 2em;
+// }
 
 // animation
 .circle {
@@ -122,6 +123,10 @@
 		grid-template-columns: 66% auto;
 		background: unset;
 		padding: 0;
+
+		.grid {
+			place-content: unset;
+		}
 
 		&__content {
 			background: $blue;

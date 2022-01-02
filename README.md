@@ -18,14 +18,8 @@ This Website should :
 - Work on all screen sizes and different layout on the users browser
 - See hover states for all interactive elements on the page
 
-### Screenshot
-
-![](./assets/portfolio-desktop.png)
-![](./assets/portfolio-mobile.png)
-
 ### Links
 
-- Source code URL: [GitHub](https://github.com/hariscs/myportfolio)
 - Live Site URL: [Haris](https://harisshah.codes/)
 
 ## My process
@@ -45,3 +39,4 @@ This Website should :
 
 - GitHub - [@hariscs](https://github.com/hariscs)
 - Twitter - [@\_haris_shah](https://www.twitter.com/_haris_shah)
+- Linkedin - [Haris Shah] (https://www.linkedin.com/in/haris-shah-4334671a7/)

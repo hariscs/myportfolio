@@ -56,6 +56,29 @@
 	padding: 4em;
 	height: 70vh;
 
+	&__cta {
+		display: flex;
+		flex-direction: column;
+		gap: 0.5em;
+		align-items: center;
+		justify-content: center;
+
+		.cta {
+			color: $white;
+			padding: 0.8em 2em;
+			font-weight: 600;
+			border-radius: 0.4em;
+		}
+
+		.cta-primary {
+			background: $pink;
+			border: 1px solid $pink;
+		}
+		.cta-secondary {
+			border: 1px solid white;
+		}
+	}
+
 	&__upper-text {
 		margin: 1em 0 -1em;
 		display: block;
@@ -118,6 +141,11 @@
 		grid-template-columns: 66% auto;
 		background: unset;
 		padding: 0;
+
+		&__cta {
+			flex-direction: row;
+			justify-content: flex-start;
+		}
 
 		.grid {
 			place-content: unset;

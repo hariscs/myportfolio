@@ -98,6 +98,30 @@ section {
   height: 70vh;
 }
 
+.hero__cta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero__cta .cta {
+  color: #fff;
+  padding: 0.8em 2em;
+  font-weight: 600;
+  border-radius: 0.4em;
+}
+
+.hero__cta .cta-primary {
+  background: #ff64cb;
+  border: 1px solid #ff64cb;
+}
+
+.hero__cta .cta-secondary {
+  border: 1px solid white;
+}
+
 .hero__upper-text {
   margin: 1em 0 -1em;
   display: block;
@@ -158,6 +182,10 @@ section {
     grid-template-columns: 66% auto;
     background: unset;
     padding: 0;
+  }
+  .hero__cta {
+    flex-direction: row;
+    justify-content: flex-start;
   }
   .hero .grid {
     place-content: unset;

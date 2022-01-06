@@ -104,6 +104,7 @@ section {
   gap: 0.5em;
   align-items: center;
   justify-content: center;
+  margin: 1em auto;
 }
 
 .hero__cta .cta {
@@ -116,10 +117,22 @@ section {
 .hero__cta .cta-primary {
   background: #ff64cb;
   border: 1px solid #ff64cb;
+  transition: all 200ms ease-in;
+}
+
+.hero__cta .cta-primary:hover {
+  background: transparent;
+  border-color: #fff;
 }
 
 .hero__cta .cta-secondary {
   border: 1px solid white;
+  transition: all 200ms ease-in;
+}
+
+.hero__cta .cta-secondary:hover {
+  border-color: #ff64cb;
+  text-decoration: underline;
 }
 
 .hero__upper-text {
@@ -342,11 +355,19 @@ section {
   border-radius: 1em;
 }
 
+.design-by {
+  color: #6e00ff;
+}
+
 .project__subtitle {
   max-width: 50ch;
   margin-left: auto;
   margin-right: auto;
   color: #252525;
+}
+
+.tools {
+  font-weight: 500;
 }
 
 .btn-group {

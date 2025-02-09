@@ -57,7 +57,7 @@ section {
 }
 
 .header .logo {
-  color: #00f7ff;
+  color: #fff;
   font-weight: 700;
 }
 
@@ -65,7 +65,8 @@ section {
   font-weight: 700;
 }
 
-.header .intro:hover, .header .intro:focus {
+.header .intro:hover,
+.header .intro:focus {
   color: #00f7ff;
 }
 
@@ -81,7 +82,8 @@ section {
   font-size: 1.8em;
 }
 
-.social-header ul .fab:hover, .social-header ul .fab:focus {
+.social-header ul .fab:hover,
+.social-header ul .fab:focus {
   color: #6700ee;
 }
 
@@ -149,7 +151,7 @@ section {
 }
 
 .hero .grid .logo {
-  padding: 0.2em;
+  padding: 0.4em 0.2em;
   display: grid;
   place-items: center;
   background: #fff;
@@ -327,7 +329,8 @@ section {
   cursor: pointer;
 }
 
-.skills__card .fab:hover, .skills__card .fab:focus {
+.skills__card .fab:hover,
+.skills__card .fab:focus {
   color: #6e00ff;
 }
 
@@ -350,8 +353,9 @@ section {
   order: -1;
 }
 
-.projects__container a img {
+.projects__container img {
   border-radius: 1em;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 .design-by {
@@ -391,7 +395,8 @@ section {
   color: #fff;
 }
 
-.btn-group .btn-primary:hover, .btn-group .btn-primary:focus {
+.btn-group .btn-primary:hover,
+.btn-group .btn-primary:focus {
   background: transparent;
   color: #6e00ff;
 }
@@ -480,7 +485,8 @@ section {
   transition: all 0.3s ease-in-out;
 }
 
-.contact__form button:hover, .contact__form button:focus {
+.contact__form button:hover,
+.contact__form button:focus {
   background: transparent;
   color: #6e00ff;
 }
@@ -539,7 +545,8 @@ section {
   transition: all 0.3s ease-in-out;
 }
 
-.contact__form button:hover, .contact__form button:focus {
+.contact__form button:hover,
+.contact__form button:focus {
   background: transparent;
   color: #6e00ff;
 }

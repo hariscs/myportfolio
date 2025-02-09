@@ -1,215 +1,215 @@
 .nav-container {
-	background: $purple;
+  background: $purple;
 
-	a {
-		color: $white;
-	}
+  a {
+    color: $white;
+  }
 }
 
 .header {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 1.5em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5em;
 
-	.logo {
-		color: $cyan;
-		font-weight: 700;
-	}
+  .logo {
+    color: $white;
+    font-weight: 700;
+  }
 
-	.intro {
-		font-weight: 700;
+  .intro {
+    font-weight: 700;
 
-		&:hover,
-		&:focus {
-			color: $cyan;
-		}
-	}
+    &:hover,
+    &:focus {
+      color: $cyan;
+    }
+  }
 }
 
 .social-header {
-	display: none;
+  display: none;
 
-	ul {
-		display: flex;
+  ul {
+    display: flex;
 
-		.fab {
-			font-size: 1.8em;
+    .fab {
+      font-size: 1.8em;
 
-			&:hover,
-			&:focus {
-				color: $purple;
-			}
-		}
-	}
-	li + li {
-		margin-left: 2em;
-	}
+      &:hover,
+      &:focus {
+        color: $purple;
+      }
+    }
+  }
+  li + li {
+    margin-left: 2em;
+  }
 }
 
 // hero section
 .hero {
-	background: $blue;
-	color: $white;
-	display: grid;
-	text-align: center;
-	padding: 4em;
-	// height: 70vh;
+  background: $blue;
+  color: $white;
+  display: grid;
+  text-align: center;
+  padding: 4em;
+  // height: 70vh;
 
-	&__cta {
-		display: flex;
-		flex-direction: column;
-		gap: 0.5em;
-		align-items: center;
-		justify-content: center;
-		margin: 1em auto;
+  &__cta {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    align-items: center;
+    justify-content: center;
+    margin: 1em auto;
 
-		.cta {
-			color: $white;
-			padding: 0.8em 2em;
-			font-weight: 600;
-			border-radius: 0.4em;
-		}
+    .cta {
+      color: $white;
+      padding: 0.8em 2em;
+      font-weight: 600;
+      border-radius: 0.4em;
+    }
 
-		.cta-primary {
-			background: $pink;
-			border: 1px solid $pink;
-			transition: all 200ms ease-in;
+    .cta-primary {
+      background: $pink;
+      border: 1px solid $pink;
+      transition: all 200ms ease-in;
 
-			&:hover {
-				background: transparent;
-				border-color: $white;
-			}
-		}
-		.cta-secondary {
-			border: 1px solid white;
-			transition: all 200ms ease-in;
+      &:hover {
+        background: transparent;
+        border-color: $white;
+      }
+    }
+    .cta-secondary {
+      border: 1px solid white;
+      transition: all 200ms ease-in;
 
-			&:hover {
-				border-color: $pink;
-				text-decoration: underline;
-			}
-		}
-	}
+      &:hover {
+        border-color: $pink;
+        text-decoration: underline;
+      }
+    }
+  }
 
-	&__upper-text {
-		margin: 1em 0 -1em;
-		display: block;
-		font-weight: 500;
-	}
+  &__upper-text {
+    margin: 1em 0 -1em;
+    display: block;
+    font-weight: 500;
+  }
 
-	.grid {
-		margin: 2em auto 1em;
-		display: grid;
-		grid-template-columns: repeat(3, minmax(50px, 100px));
-		gap: 0.5em;
-		place-content: center;
+  .grid {
+    margin: 2em auto 1em;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(50px, 100px));
+    gap: 0.5em;
+    place-content: center;
 
-		.logo {
-			img {
-				width: 60px;
-			}
-			padding: 0.2em;
-			display: grid;
-			place-items: center;
-			background: $white;
-			border-radius: 10px;
-		}
-	}
+    .logo {
+      img {
+        width: 60px;
+      }
+      padding: 0.2em;
+      display: grid;
+      place-items: center;
+      background: $white;
+      border-radius: 10px;
+    }
+  }
 }
 
 .hero-design {
-	display: none;
+  display: none;
 }
 
 .know-more {
-	display: flex;
-	gap: 0.5em;
-	justify-content: center;
-	align-items: center;
-	font-weight: 700;
-	color: $pink;
+  display: flex;
+  gap: 0.5em;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  color: $pink;
 }
 
 // animation
 .circle {
-	animation: circleAnim 1s infinite alternate-reverse;
+  animation: circleAnim 1s infinite alternate-reverse;
 }
 
 @keyframes circleAnim {
-	from {
-		transform: translate(262px, 798px);
-		z-index: 3;
-	}
-	to {
-		transform: translate(262px, 830px);
-	}
+  from {
+    transform: translate(262px, 798px);
+    z-index: 3;
+  }
+  to {
+    transform: translate(262px, 830px);
+  }
 }
 
 // media query for desktops
 @include desktop {
-	.hero {
-		height: 90vh;
-		display: grid;
-		grid-template-columns: 66% auto;
-		background: unset;
-		padding: 0;
+  .hero {
+    height: 90vh;
+    display: grid;
+    grid-template-columns: 66% auto;
+    background: unset;
+    padding: 0;
 
-		&__cta {
-			flex-direction: row;
-			justify-content: flex-start;
-		}
+    &__cta {
+      flex-direction: row;
+      justify-content: flex-start;
+    }
 
-		.grid {
-			place-content: unset;
-		}
+    .grid {
+      place-content: unset;
+    }
 
-		&__content {
-			background: $blue;
-			padding: 6em 8em 6em 4em;
-			text-align: left;
+    &__content {
+      background: $blue;
+      padding: 6em 8em 6em 4em;
+      text-align: left;
 
-			h1 {
-				font-size: 3em;
-				line-height: 1.2;
-			}
+      h1 {
+        font-size: 3em;
+        line-height: 1.2;
+      }
 
-			.know-more {
-				justify-content: flex-start;
-			}
-		}
-	}
+      .know-more {
+        justify-content: flex-start;
+      }
+    }
+  }
 
-	.hero-design {
-		display: unset;
-		width: 100%;
-		margin-left: -50%;
-		margin-top: 5%;
-	}
+  .hero-design {
+    display: unset;
+    width: 100%;
+    margin-left: -50%;
+    margin-top: 5%;
+  }
 
-	.nav-container {
-		display: grid;
-		grid-template-columns: 66% auto;
-		background: unset;
-	}
+  .nav-container {
+    display: grid;
+    grid-template-columns: 66% auto;
+    background: unset;
+  }
 
-	.header {
-		background: $purple;
-		padding: 2em 2em 2em 4em;
-	}
+  .header {
+    background: $purple;
+    padding: 2em 2em 2em 4em;
+  }
 
-	.social-header {
-		padding: 2em 4em 2em 0;
-		display: block;
+  .social-header {
+    padding: 2em 4em 2em 0;
+    display: block;
 
-		ul {
-			justify-content: space-between;
-			float: right;
-		}
+    ul {
+      justify-content: space-between;
+      float: right;
+    }
 
-		a {
-			color: $black;
-			margin-left: 1em;
-		}
-	}
+    a {
+      color: $black;
+      margin-left: 1em;
+    }
+  }
 }

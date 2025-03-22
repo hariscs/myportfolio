@@ -602,3 +602,57 @@ section {
   }
 }
 /*# sourceMappingURL=style.css.map */
+.teams-section {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #f8f8f8;
+}
+
+.teams-section .teams-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.logos-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 20px;
+  justify-items: center;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.logo-wrapper {
+  width: 150px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #222;
+  border-radius: 10px;
+  padding: 10px;
+}
+.team-logo {
+  height: auto;
+  transition: transform 0.3s ease;
+  max-width: 100%;
+  max-height: 100%;
+}
+.logo-white {
+  background-color: #fff;
+  outline: 1px solid #000;
+}
+.team-logo:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 600px) {
+  .teams-section .teams-title {
+    font-size: 1.5rem;
+  }
+  .logo-wrapper {
+    width: 120px;
+    height: 80px;
+  }
+}
